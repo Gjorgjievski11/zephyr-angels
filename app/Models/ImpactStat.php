@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class ImpactStat extends Model
 {
-    //
+    protected $fillable = ['label', 'value', 'description', 'order'];
 }

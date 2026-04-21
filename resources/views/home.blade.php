@@ -23,12 +23,12 @@
     <x-layout.navbar />
     <x-sections.hero />
     <x-sections.about />
-    <x-sections.impact />
-    <x-sections.services />
-    <x-sections.portfolio />
+    <x-sections.impact :impact-stats="$impactStats" />
+    <x-sections.services :services="$services" />
+    <x-sections.portfolio :portfolio-items="$portfolioItems" />
     <x-sections.equity />
-    <x-sections.team />
-    <x-sections.sponsors />
+    <x-sections.team :team-members="$teamMembers" />
+    <x-sections.sponsors :sponsors="$sponsors" />
     <x-sections.cta />
     <x-layout.footer />
 </body>

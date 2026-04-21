@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class PortfolioItem extends Model
 {
-    //
+    protected $fillable = ['image_path', 'alt_text', 'order'];
 }

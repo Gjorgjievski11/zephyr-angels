@@ -1,14 +1,4 @@
-@php
-    $portfolioItems = [
-        'barkoder.svg',
-        'coach.svg',
-        'hylosense.svg',
-        'kalliq.svg',
-        'vendor.svg',
-        'veli.svg'
-    ];
-@endphp
-
+@props(["$portfolioItems"])
 <div id="portfolio" class="bg-glass flex flex-col justify-center items-center mt-50 border border-glass rounded-2xl mx-20 py-20 gap-10">
     <div class="flex flex-col gap-5">
         <p class="text-slate text-center">PORTFOLIO</p>
@@ -18,7 +8,7 @@
         <div class="flex w-max" id="marquee-track">
             @foreach([1, 2] as $pass)
                 @foreach($portfolioItems as $item)
-                    <x-ui.carousel-card src="{{ asset('img/portfolio/' . $item) }}" />
+                    <x-ui.carousel-card src="{{ asset($item->image_path) }}" alt="{{ $item->alt_text }}" />
                 @endforeach
             @endforeach
         </div>
