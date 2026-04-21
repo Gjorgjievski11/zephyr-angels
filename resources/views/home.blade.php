@@ -13,9 +13,9 @@
     <meta name="theme-color" content="#00C4CA">
 
     {{-- Favicons --}}
-    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-    <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ asset('icons/favicon.svg') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('icons/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset('icons/apple-touch-icon.png') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -23,6 +23,13 @@
     <x-layout.navbar />
     <x-sections.hero />
     <x-sections.about />
+    <x-sections.impact />
+    <x-sections.services />
+    <x-sections.portfolio />
+    <x-sections.equity />
+    <x-sections.team />
+    <x-sections.sponsors />
+    <x-sections.cta />
     <x-layout.footer />
 </body>
 </html>

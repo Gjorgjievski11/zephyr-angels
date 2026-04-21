@@ -15,10 +15,10 @@
         <div class="flex flex-col gap-5">
             <p class="text-white text-xl">Follow Us</p>
             <div class="flex gap-4">
-                <img src="{{ asset("icons/LinkedIn.svg") }}" alt="LinkedIn">
-                <img src="{{ asset("icons/Instagram.svg") }}" alt="Instagram">
-                <img src="{{ asset("icons/CrunchBase.svg") }}" alt="CrunchBase">
-                <img src="{{ asset("icons/Mail.svg") }}" alt="Mail">
+                <img src="{{ asset("icons/footer/LinkedIn.svg") }}" alt="LinkedIn">
+                <img src="{{ asset("icons/footer/Instagram.svg") }}" alt="Instagram">
+                <img src="{{ asset("icons/footer/CrunchBase.svg") }}" alt="CrunchBase">
+                <img src="{{ asset("icons/footer/Mail.svg") }}" alt="Mail">
             </div>
         </div>
     </div>
