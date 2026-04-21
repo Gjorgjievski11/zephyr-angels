@@ -18,7 +18,7 @@
         <div class="flex w-max" id="marquee-track">
             @foreach([1, 2] as $pass)
                 @foreach($portfolioItems as $item)
-                    <x-ui.portfolio-card src="{{ asset('img/portfolio/' . $item) }}" />
+                    <x-ui.carousel-card src="{{ asset('img/portfolio/' . $item) }}" />
                 @endforeach
             @endforeach
         </div>
