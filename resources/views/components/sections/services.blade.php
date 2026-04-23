@@ -1,10 +1,10 @@
-<div id="page4" class="flex flex-col justify-center items-center gap-10 mt-[200px] px-20">
+<div id="page4" class="flex flex-col justify-center items-center gap-10 mt-50 px-20">
     <div class="flex flex-col gap-5">
         <p class="text-slate text-center uppercase tracking-widest">SERVICES</p>
-        <h2 class="text-white text-center text-6xl font-semibold">What We Offer</h2>
+        <h2 class="text-white text-center text-5xl lg:text-6xl font-semibold">What We Offer</h2>
     </div>
 
-    <div class="text-slate flex gap-5 flex-col items-center justify-center w-[65%] text-xl text-center">
+    <div class="text-slate flex gap-5 flex-col items-center justify-center lg:w-[65%] text-xl text-center">
         <p>
             Zephyr turns high-potential startups into investable opportunities, and connect them with the right capital, at the right time.
         </p>
