@@ -14,6 +14,7 @@ class ImpactStatsTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->reorderable('order')
             ->columns([
                 TextColumn::make('value')
                     ->searchable(),

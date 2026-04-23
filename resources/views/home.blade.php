@@ -21,15 +21,15 @@
 </head>
 <body class="bg-ink">
     <x-layout.navbar />
-    <x-sections.hero />
-    <x-sections.about />
+    <x-sections.hero :hero="$hero" />
+    <x-sections.about :about="$about" />
     <x-sections.impact :impact-stats="$impactStats" />
-    <x-sections.services :services="$services" />
+    <x-sections.services :services="$services" :services-section="$servicesSection" />
     <x-sections.portfolio :portfolio-items="$portfolioItems" />
-    <x-sections.equity />
+    <x-sections.equity :equity="$equity" />
     <x-sections.team :team-members="$teamMembers" />
     <x-sections.sponsors :sponsors="$sponsors" />
-    <x-sections.cta />
-    <x-layout.footer />
+    <x-sections.cta :cta="$cta" />
+    <x-layout.footer :footer="$footer" />
 </body>
 </html>

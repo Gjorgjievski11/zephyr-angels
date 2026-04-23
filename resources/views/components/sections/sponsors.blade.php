@@ -6,7 +6,7 @@
     </div>
     <div class="flex flex-wrap justify-center gap-6">
         @foreach($sponsors as $sponsor)
-            <x-ui.carousel-card src="{{ asset($sponsor->logo_path) }}" />
+            <x-ui.carousel-card src="{{ Storage::url($sponsor->logo_path) }}" />
         @endforeach
     </div>
 </div>

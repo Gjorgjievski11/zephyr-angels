@@ -1,10 +1,9 @@
 <?php
-
 namespace App\Filament\Resources\PortfolioItems\Schemas;
-
 use Filament\Infolists\Components\ImageEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Storage;
 
 class PortfolioItemInfolist
 {
@@ -12,7 +11,12 @@ class PortfolioItemInfolist
     {
         return $schema
             ->components([
-                ImageEntry::make('image_path'),
+                ImageEntry::make('image_path')
+                    ->label('Image')
+                    ->disk('public')
+                    ->columnSpanFull(),
+                TextEntry::make('image_path')
+                    ->label('Image Path'),
                 TextEntry::make('alt_text')
                     ->placeholder('-'),
                 TextEntry::make('order')

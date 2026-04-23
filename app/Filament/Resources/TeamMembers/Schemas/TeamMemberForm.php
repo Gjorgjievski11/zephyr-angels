@@ -1,10 +1,8 @@
 <?php
-
 namespace App\Filament\Resources\TeamMembers\Schemas;
-
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
-
 class TeamMemberForm
 {
     public static function configure(Schema $schema): Schema
@@ -15,7 +13,11 @@ class TeamMemberForm
                     ->required(),
                 TextInput::make('title')
                     ->required(),
-                TextInput::make('photo_path')
+                FileUpload::make('photo_path')
+                    ->label('Photo')
+                    ->image()
+                    ->disk('public')
+                    ->directory('team')
                     ->required(),
                 TextInput::make('order')
                     ->required()

@@ -1,25 +1,27 @@
 <?php
-
 namespace App\Filament\Resources\TeamMembers\Tables;
-
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-
 class TeamMembersTable
 {
     public static function configure(Table $table): Table
     {
         return $table
+            ->reorderable('order')
             ->columns([
                 TextColumn::make('name')
                     ->searchable(),
                 TextColumn::make('title')
                     ->searchable(),
+                ImageColumn::make('photo_path')
+                    ->getStateUsing(fn ($record) => asset($record->photo_path)),
                 TextColumn::make('photo_path')
+                    ->label('Photo Path')
                     ->searchable(),
                 TextColumn::make('order')
                     ->numeric()
@@ -33,9 +35,7 @@ class TeamMembersTable
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
-            ->filters([
-                //
-            ])
+            ->filters([])
             ->recordActions([
                 ViewAction::make(),
                 EditAction::make(),
