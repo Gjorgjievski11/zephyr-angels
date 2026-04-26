@@ -1,10 +1,10 @@
 @props(['services', 'servicesSection'])
-<div id="services" class="flex flex-col justify-center items-center gap-10 mt-50 px-20">
+<div id="services" class="flex flex-col justify-center items-center gap-10 mt-50 mx-5 md:mx-10 lg:mx-20">
     <div class="flex flex-col gap-5">
         <p class="text-slate text-center uppercase tracking-widest">{{ $servicesSection['eyebrow'] }}</p>
-        <h2 class="text-white text-center text-6xl font-semibold">{{ $servicesSection['heading'] }}</h2>
+        <h2 class="text-white text-center text-5xl lg:text-6xl font-semibold">{{ $servicesSection['heading'] }}</h2>
     </div>
-    <div class="text-slate flex gap-5 flex-col items-center justify-center w-[65%] text-xl text-center">
+    <div class="text-slate flex gap-5 flex-col items-center justify-center lg:w-[65%] text-xl text-center">
         <p>{{ $servicesSection['desc1'] }}</p>
         <p>{{ $servicesSection['desc2'] }}</p>
     </div>
