@@ -1,4 +1,4 @@
-<footer id="contact" class="flex flex-col justify-center items-center mt-48 mb-12 border-2 border-glass rounded-2xl mx-20 py-20 gap-10">
+<footer id="contact" class="flex flex-col justify-center items-center mt-48 mb-12 border-2 border-glass rounded-2xl mx-5 md:mx-10 lg:mx-20 py-20 gap-10">
     <div class="flex flex-col lg:flex-row gap-10 border-b-2 border-glass pb-10">
         <div class="flex flex-col gap-5 px-5 lg:w-1/3">
             <p class="text-xl text-white">Zephyr Angels</p>

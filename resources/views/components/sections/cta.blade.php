@@ -9,7 +9,7 @@
             <span class="text-teal text-6xl lg:text-8xl font-semibold  [text-shadow:0_0_20px_teal]">Together?</span>
         </h1>
     </div>
-    <div class="w-1/2">
+    <div class="mx-5 md:w-1/2">
         <p class="text-center text-slate lg:text-xl">
             Whether you're a founder with a bold vision or an investor looking for the next breakthrough — we'd love
             to hear from you.

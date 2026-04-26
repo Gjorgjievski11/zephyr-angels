@@ -1,4 +1,4 @@
-<header class="flex h-12 bg-black justify-between items-center px-16 sticky top-0 py-10">
+<header class="flex h-12 bg-black justify-between items-center px-8 md:px-16 sticky top-0 py-10">
     <div class="w-1/2 h-12 flex">
         <img src="{{ asset('img/logo.svg') }}" alt="Zephyr Angels">
     </div>

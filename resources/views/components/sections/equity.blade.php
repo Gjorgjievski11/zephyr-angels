@@ -1,5 +1,5 @@
-<div id="equity" class="flex flex-col md:flex-row justify-center gap-10 mt-50 items-stretch px-10 lg:px-0 ">
-    <div class="flex flex-col justify-center md:w-[40%] gap-16 ">
+<div id="equity" class="flex flex-col lg:flex-row justify-center gap-10 mt-50 items-center mx-5 md:mx-10 lg:mx-20 lg:px-0 ">
+    <div class="flex flex-col justify-center lg:w-[40%] gap-16 ">
         <div class="flex flex-col gap-5">
             <p class="text-slate text-center lg:text-start tracking-widest">ZEPHYR EQUITY</p>
             <h2 class="text-white text-center lg:text-start text-5xl lg:text-6xl font-semibold">What is Zephyr Equity?</h2>
@@ -25,7 +25,7 @@
             </p>
         </div>
     </div>
-    <div class="flex md:w-[40%] justify-center">
+    <div class="flex lg:w-[40%] justify-center">
         <img src="{{ asset('img/equity.png') }}" alt="Zephyr Equity">
     </div>
 </div>

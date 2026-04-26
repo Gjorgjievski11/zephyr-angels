@@ -1,4 +1,4 @@
-<main class="flex items-center justify-center gap-5 flex-col mt-50 ">
+<main class="flex items-center justify-center gap-5 flex-col mt-20 md:mt-50 mx-5 lg:mx-20 ">
     <div>
         <p class="tracking-widest lg:text-xl text-center text-slate">NON-EXCLUSIVE ANGEL INVESTING NETWORK</p>
     </div>
@@ -9,7 +9,7 @@
             <span class="text-6xl lg:text-8xl font-semibold text-white">for Brave Founders</span>
         </h1>
     </div>
-    <div class="w-1/2">
+    <div class="md:w-1/2">
         <p class="text-center lg:text-xl text-slate">
             We connect Macedonian and Southeast European tech-based startups with experienced investors to fuel
             innovation at the earliest pre-seed and seed stages
