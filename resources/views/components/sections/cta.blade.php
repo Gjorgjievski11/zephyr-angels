@@ -20,6 +20,6 @@
         </a>
         <a href="{{ $cta['cta2_url'] }}" class="flex align-middle justify-center text-center border-white border rounded-2xl px-5 py-2 text-white">
             {{ $cta['cta2_text'] }}
-        </button>
+        </a>
     </div>
 </div>

@@ -11,3 +11,11 @@
     --color-slate: #ACBABF;
     --color-teal: #00C4CA;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: 10rem;
+}
