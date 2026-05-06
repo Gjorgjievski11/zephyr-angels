@@ -15,7 +15,7 @@ class PortfolioItemsTable
             ->reorderable('order')
             ->columns([
                 ImageColumn::make('image_path')
-                    ->getStateUsing(fn ($record) => asset($record->image_path)),
+                    ->getStateUsing(fn ($record) => ($record->image_path)),
                 TextColumn::make('image_path')
                     ->label('Image Path')
                     ->searchable(),

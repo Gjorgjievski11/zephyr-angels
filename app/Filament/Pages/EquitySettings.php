@@ -19,21 +19,18 @@ class EquitySettings extends Page implements HasForms
     public function mount(): void
     {
         $this->form->fill([
-            'eyebrow'    => Setting::get('equity', 'eyebrow'),
-            'heading'    => Setting::get('equity', 'heading'),
-            'paragraph1' => Setting::get('equity', 'paragraph1'),
-            'paragraph2' => Setting::get('equity', 'paragraph2'),
-            'paragraph3' => Setting::get('equity', 'paragraph3'),
+            'eyebrow' => Setting::get('equity', 'eyebrow'),
+            'heading' => Setting::get('equity', 'heading'),
+            'body'    => Setting::get('equity', 'body'),
         ]);
     }
+
     public function form(Schema $schema): Schema
     {
         return $schema->schema([
             TextInput::make('eyebrow')->label('Eyebrow Text'),
             TextInput::make('heading')->label('Heading'),
-            Textarea::make('paragraph1')->label('Paragraph 1'),
-            Textarea::make('paragraph2')->label('Paragraph 2'),
-            Textarea::make('paragraph3')->label('Paragraph 3'),
+            Textarea::make('body')->label('Body')->rows(8)->columnSpanFull(),
         ])->statePath('data');
     }
     public function save(): void

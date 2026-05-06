@@ -19,25 +19,21 @@ class AboutSettings extends Page implements HasForms
     public function mount(): void
     {
         $this->form->fill([
-            'eyebrow'  => Setting::get('about', 'eyebrow'),
-            'heading'  => Setting::get('about', 'heading'),
-            'paragraph1' => Setting::get('about', 'paragraph1'),
-            'paragraph2' => Setting::get('about', 'paragraph2'),
-            'paragraph3' => Setting::get('about', 'paragraph3'),
-            'paragraph4' => Setting::get('about', 'paragraph4'),
+            'eyebrow' => Setting::get('about', 'eyebrow'),
+            'heading' => Setting::get('about', 'heading'),
+            'body'    => Setting::get('about', 'body'),
         ]);
     }
+
     public function form(Schema $schema): Schema
     {
         return $schema->schema([
             TextInput::make('eyebrow')->label('Eyebrow Text'),
             TextInput::make('heading')->label('Heading'),
-            Textarea::make('paragraph1')->label('Paragraph 1'),
-            Textarea::make('paragraph2')->label('Paragraph 2'),
-            Textarea::make('paragraph3')->label('Paragraph 3'),
-            Textarea::make('paragraph4')->label('Paragraph 4'),
+            Textarea::make('body')->label('Body')->rows(8)->columnSpanFull(),
         ])->statePath('data');
     }
+
     public function save(): void
     {
         foreach ($this->data as $key => $value) {

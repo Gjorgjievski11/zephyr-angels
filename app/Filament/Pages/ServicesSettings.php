@@ -21,19 +21,19 @@ class ServicesSettings extends Page implements HasForms
         $this->form->fill([
             'eyebrow' => Setting::get('services', 'eyebrow'),
             'heading' => Setting::get('services', 'heading'),
-            'desc1'   => Setting::get('services', 'desc1'),
-            'desc2'   => Setting::get('services', 'desc2'),
+            'body'    => Setting::get('services', 'body'),
         ]);
     }
+
     public function form(Schema $schema): Schema
     {
         return $schema->schema([
             TextInput::make('eyebrow')->label('Eyebrow Text'),
             TextInput::make('heading')->label('Heading'),
-            Textarea::make('desc1')->label('Description Paragraph 1')->columnSpanFull(),
-            Textarea::make('desc2')->label('Description Paragraph 2')->columnSpanFull(),
+            Textarea::make('body')->label('Body')->rows(8)->columnSpanFull(),
         ])->statePath('data');
     }
+
     public function save(): void
     {
         foreach ($this->data as $key => $value) {
