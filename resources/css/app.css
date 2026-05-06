@@ -10,6 +10,7 @@
     --color-glass: #FFFFFF0D;
     --color-slate: #ACBABF;
     --color-teal: #00C4CA;
+    --color-teal-dark: #0A6B6E
 }
 
 html {
@@ -17,5 +18,21 @@ html {
 }
 
 [id] {
-    scroll-margin-top: 10rem;
+     scroll-margin-top: 5rem;
+ }
+
+@media (min-width: 1024px) {
+    [id] {
+        scroll-margin-top: 10rem;
+    }
 }
+
+#nav-menu:not(.hidden) {
+    animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+

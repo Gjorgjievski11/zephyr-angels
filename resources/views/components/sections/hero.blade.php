@@ -5,9 +5,9 @@
     </div>
     <div>
         <h1 class="text-center">
-            <span class="text-teal text-7xl font-semibold [text-shadow:0_0_20px_teal]">{{ $hero['heading_teal'] ?? '' }}</span>
+            <span class="text-6xl lg:text-7xl font-semibold text-teal [text-shadow:0_0_20px_teal]">{{ $hero['heading_teal'] ?? '' }}</span>
             <br>
-            <span class="text-7xl font-semibold text-white">{{ $hero['heading_white'] ?? '' }}</span>
+            <span class="text-5xl lg:text-7xl font-semibold text-white">{{ $hero['heading_white'] ?? '' }}</span>
         </h1>
     </div>
     <div class="md:w-1/2">
