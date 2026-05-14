@@ -76,14 +76,3 @@ php artisan filament:cache-components
 For full deployment and hosting instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ---
-
-## Environment Variables
-
-Key values to configure in `.env`:
-
-| Variable | Description |
-|---|---|
-| `APP_URL` | Full URL of the site |
-| `DB_*` | Database connection details |
-| `FILESYSTEM_DISK` | Set to `public` for uploaded file serving |
-| `MAIL_*` | SMTP credentials for outgoing email |
